@@ -1,0 +1,26 @@
+* {
+  font-family: arial;
+  color: rgba(50,50,200, .9);
+}
+
+body {
+  padding: 20px;
+  background: linear-gradient(to bottom, rgba(221,237,243,1) 0%, rgba(90,189,211,1) 50%, rgba(229,241,245,1) 100%);
+}
+
+h1, h2{
+  color: black;
+}
+
+#jsInfo {
+  border: 2px solid white;
+  padding: 15px;
+  margin: 10px 30px 30px;
+  background-color: lightgray;
+  box-shadow: 13px 19px 72px -12px rgba(66,61,66,1);
+}
+
+.direction {
+  color: black;
+  font-style: italic;
+}

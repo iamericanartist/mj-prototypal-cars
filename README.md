@@ -1,6 +1,9 @@
 # Car Manufactory
 ## Modern JavaScript / Prototypal / Car Manufactory
 
+![Car Manufactory](carManufactory.jpg?raw=true "Car Manufactory Screenshot")
+[Check it out on CODEPEN](http://codepen.io/IAmericanArtist/pen/GqEOkg)
+
 ## Instructions
 
 Follow the instructions in the comments below.
