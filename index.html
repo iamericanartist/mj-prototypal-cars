@@ -3,11 +3,77 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <link rel="stylesheet" href="">
+  <title>Prototypical Inheritace Exercise</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1>The Car Lott</h1>
+  <h1>The Car Lot</h1>
+  <h2>Modern JavaScript / Prototypal / Car Manufactory</h2>
+  <hr>
+
+  <h3>Instructions</h3>
+  <p> Follow the instructions in the comments below.</p>
+
+  <h4>manufactory.js</h4>
+  <div id="jsInfo">
+    <p class="direction">Create a function named Car with one property named `manufactured_date` 
+      whose value will be Date.now()
+    </p>
+      function Car () {
+    <span class="direction">Create the manufactured date property (see above)
+    </span>
+    <br>
+    <br>
+      }
+
+    <p class="direction">
+      <ul>
+        <li class="direction">Create a constructor function named Make with one argument that will hold the manufacturer of the Make (see below). </li>
+        <li class="direction"> Set its prototype to a new instance of the Car function.</li>
+        <li class="direction">Define a property `manufacturer` and assign the manufacturer property to the argument value.</li>
+      </ul>
+    </p>
+      function Make (maker) { <br>
+        &nbsp &nbsp this.manufacturer = maker;<br>
+      }
+    <p class="direction">Set the prototype to Car
+    </p>
+    <ol>
+      <li class="direction"> Create a new constructor function for the make of your favorite car.</li>
+      <li class="direction"> It must inherit from the general Make function.</li>
+      <li class="direction"> It must have one argument that will to hold the model name.</li>
+      <li class="direction"> The constructor must define a property to hold the model name.</li>
+    </ol>
+
+      function YourFavoriteMake (name) { <br>
+        &nbsp &nbsp this.modelName = name;<br>
+      }<br>
+      YourFavoriteMake.prototype = new Make(...);
+
+    <ol>
+      <li class="direction">Create a constructor function named after your favorite car model.</li>
+      <li class="direction">It must inherit from the specific make type you created in previous step.</li>
+      <li class="direction">When creating the inheritance relationship, pass in the model name
+           to the make constructor function</li>
+    </ol>
+
+      function YourFavoriteModel () {<br>
+      <br>
+      }<br>
+
+      <p class="direction">Set the prototype to appropriate model you created above and set the model name argument</p>
+      YourFavoriteModel.prototype = new YourFavoriteMake(...);
+
+      <p class="direction">
+      Being an avid car collector, you own three different cars all of
+      same model from your favorite manufacturer.
+      </p>      
+      <ol>
+        <li class="direction">Create three new instances of your favorite car.</li>
+        <li class="direction">Create a new property on each object to hold the license plate number for each car.</li>
+      </ol>
+  </div>
+
   <script src="js/main.js"></script>
 </body>
 </html>
